@@ -1,0 +1,14 @@
+type_screening = input()
+rows = int(input())
+columns = int(input())
+price_ticket = 0
+cinema_capacity = rows * columns
+
+if type_screening == 'Premiere':
+    price_ticket = 12
+elif type_screening == "Normal":
+    price_ticket = 7.50
+else:
+    price_ticket = 5.00
+income = cinema_capacity * price_ticket
+print(f'{income:.2f} leva')
